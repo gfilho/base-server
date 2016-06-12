@@ -25,16 +25,18 @@ var Ping = function (router){
 
 // Configuration of server
 var config = {
-  "address" : "api",
-  "port" : 1234,
-  "allowedMethods" : "POST, GET, PUT, DELETE",
-  "allowedHost": "",
-  "allowedHeaders": "",
-  "allowedCredentials" : false,
-  "allowedSSL" : false,
-  "ssl" : {
-    "key" : "",
-    "certificate": ""
+  router : {
+    "address" : "api",
+    "port" : 1234,
+    "allowedMethods" : "POST, GET, PUT, DELETE",
+    "allowedHost": "",
+    "allowedHeaders": "",
+    "allowedCredentials" : false,
+    "allowedSSL" : false,
+    "ssl" : {
+      "key" : "",
+      "certificate": ""
+    }
   }
 }
 
