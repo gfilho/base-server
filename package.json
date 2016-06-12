@@ -1,0 +1,19 @@
+{
+  "name": "base-server",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "echo 'Error: no test specified' && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://gitlab.com/gfilho/base-server.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.0.2",
+    "express": "^4.13.3",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "q": "^1.4.1",
+    "request": "^2.54.0"
+  }
+}
