@@ -1,8 +1,8 @@
-module.exports = function ( config , requests , authCall ){
+module.exports = function ( config , setupRouter ){
 
 	var Router 	= require('./lib/router.js');
 
-	var routerModule = new Router( config.router );
+	var routerModule = new Router( config.router , setupRouter );
 
 	this.addRequest = function( req ){
 		req(routerModule.router);
