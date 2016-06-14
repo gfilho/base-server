@@ -2,7 +2,7 @@ module.exports = function ( config , setupRouter ){
 
 	var Router 	= require('./lib/router.js');
 
-	var routerModule = new Router( config.router , setupRouter );
+	var routerModule = new Router( config , setupRouter );
 
 	this.addRequest = function( req ){
 		req(routerModule.router);
