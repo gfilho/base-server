@@ -3,22 +3,22 @@
 ## Installation
 
 ```bashp
-npm install git@gitlab.com:gfilho/base-server.git
+npm install @gfilho/base-server
 ```
 
 ## Usage
 
-This is example show how create a basic server using the base-server
+This is example show how create a server using the @gfilho/base-server
 ``` js
 
-var Server = require('base-server');
+var Server = require('@gfilho/base-server');
 
 // Requests
 var Ping = function (router){
 
-    var reqPing = router.route('/ping');
+    var request_ping = router.route('/ping');
 
-    reqPing.get( function( req , res ){
+    request_ping.get( function( req , res ){
         res.json({ 'error' : 0 , 'data' : 'OK' });
     });
 }
@@ -41,7 +41,7 @@ var config = {
 }
 
 // Instance of Server
-var server = new Server ( config );
+var server = new Server (config);
 
 // Include all requests
 server.addRequest(Ping);

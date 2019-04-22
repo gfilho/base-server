@@ -1,20 +1,26 @@
-module.exports = function ( config , setupRouter ){
+const { createLogger, format, transports } = require('winston');
+const Router = require('./lib/router.js');
 
-	var Router 	= require('./lib/router.js');
+class Server {
+  contructor(config, setupRouter) {
+    this.logger = createLogger({
+      level: 'debug',
+      format: format.simple(),
+      transports: [new transports.Console()],
+    });
 
-	var routerModule = new Router( config , setupRouter );
+    this.router = new Router(this.logger, config, setupRouter);
+  }
 
-	this.addRequest = function( req ){
-		req(routerModule.router);
-	}
+  addRequest(req) {
+    req(this.router.router);
+  }
 
-	this.run = function (){
-
-		console.log('Start Server');
-
-		routerModule.start();
-
-		console.log('Server Running');
-	}
-
+  run() {
+    this.logger.info('Start Server');
+    this.router.start();
+    this.logger.info('Server Running');
+  }
 }
+
+module.exports = Server;
