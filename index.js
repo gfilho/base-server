@@ -17,10 +17,15 @@ class Server {
     this.router.addModule(module);
   }
 
-  run() {
+  start() {
     this.logger.info('Start Server');
     this.router.start();
     this.logger.info('Server Running');
+  }
+
+  stop() {
+    this.logger.info('Stop Server');
+    this.router.stop();
   }
 
   get(path, callback) {
