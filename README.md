@@ -1,5 +1,6 @@
 # Base Server
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8de6566518794445a0211569e86e9ae3)](https://app.codacy.com/app/gfilho/base-server?utm_source=github.com&utm_medium=referral&utm_content=gfilho/base-server&utm_campaign=Badge_Grade_Dashboard)
 [![Build Status](https://travis-ci.com/gfilho/base-server.svg?branch=master)](https://travis-ci.com/gfilho/base-server)
 [![codecov](https://codecov.io/gh/gfilho/base-server/branch/master/graph/badge.svg)](https://codecov.io/gh/gfilho/base-server)
 
