@@ -1,5 +1,7 @@
 # Base Server
+
 [![Build Status](https://travis-ci.com/gfilho/base-server.svg?branch=master)](https://travis-ci.com/gfilho/base-server)
+[![codecov](https://codecov.io/gh/gfilho/base-server/branch/master/graph/badge.svg)](https://codecov.io/gh/gfilho/base-server)
 
 ## Installation
 
