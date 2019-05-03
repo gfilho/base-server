@@ -29,4 +29,4 @@ server.get('/ping', (req, res) => {
 });
 
 // Run Server
-server.run();
+server.start();
