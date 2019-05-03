@@ -13,10 +13,6 @@ class Server {
     this.logger.info('Initialize Server');
   }
 
-  addModule(module) {
-    this.router.addModule(module);
-  }
-
   start() {
     this.logger.info('Start Server');
     this.router.start();
@@ -40,8 +36,8 @@ class Server {
     this.router.put(path, callback);
   }
 
-  del(path, callback) {
-    this.router.del(path, callback);
+  delete(path, callback) {
+    this.router.delete(path, callback);
   }
 }
 
