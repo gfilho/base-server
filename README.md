@@ -1,4 +1,5 @@
 # Base Server
+[![Build Status](https://travis-ci.com/gfilho/base-server.svg?branch=master)](https://travis-ci.com/gfilho/base-server)
 
 ## Installation
 
