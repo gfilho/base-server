@@ -5,20 +5,6 @@ const request = require('request');
 const Server = require('..');
 
 describe('server', () => {
-  it('start', () => {
-    const config = {
-      router: {
-        address: 'api',
-        port: 1234,
-      },
-    };
-
-    const server = new Server(config);
-
-    server.start();
-    server.stop();
-  });
-
   it('get', (done) => {
     const config = {
       router: {
