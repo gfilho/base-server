@@ -31,4 +31,16 @@ describe('configuration', () => {
       server.stop();
     }).to.throw('Invalid router configuration');
   });
+  it('run', () => {
+    const config = {
+      router: {
+        address: 'test/api',
+        port: 1234,
+      },
+    };
+
+    const server = new Server(config);
+    server.start();
+    server.stop();
+  });
 });
