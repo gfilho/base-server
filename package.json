@@ -1,6 +1,6 @@
 {
   "name": "@gfilho/base-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "Gustavo S. S. Filho <gustavossfilho@gmail.com>",
   "main": "index.js",
