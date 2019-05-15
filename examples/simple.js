@@ -1,7 +1,6 @@
-// Include base-server
-const Server = require('../');
+var Server = require('..');
 
-// Configuration of server
+// Setup Server
 const config = {
   router: {
     address: 'api',
@@ -14,7 +13,7 @@ const server = new Server(config);
 
 // Bind requests
 server.get('/ping', (req, res) => {
-  res.json({ msg: 'Server is alive' });
+  res.json({ msg: 'Ops! I received a GET' });
 });
 
 // Run Server
